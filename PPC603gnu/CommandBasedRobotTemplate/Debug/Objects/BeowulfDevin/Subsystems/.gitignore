@@ -1,0 +1,11 @@
+*.o
+/Arm.d
+/Chassis.d
+/Conveyor.d
+/Intake.d
+/Pressure.d
+/Pressurizer.d
+/Sensors.d
+/Shifter.d
+/Shooter.d
+/Subsystem1.d

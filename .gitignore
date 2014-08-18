@@ -1,1 +1,10 @@
 *.cproject~
+/.project~
+/.wrmakefile~
+/.wrproject~
+/OI.cpp~
+/OI.h~
+/Robot.cpp~
+/Robot.h~
+/RobotMap.cpp~
+/RobotMap.h~
