@@ -16,3 +16,5 @@
 /ShooterOn.o
 /StopperSwitch.o
 /TankDrive.o
+/ConveyorReverse.o
+*.o

@@ -34,3 +34,7 @@
 /StopperSwitch.o
 /TankDrive.d
 /TankDrive.o
+/ConveyorReverse.d
+/ConveyorReverse.o
+/IntakeReverse.d
+/IntakeReverse.o
