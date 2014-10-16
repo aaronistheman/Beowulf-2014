@@ -70,7 +70,7 @@ void RobotMap::init() {
         chassisRobotDrive->SetExpiration(0.1);
         chassisRobotDrive->SetSensitivity(0.5);
         chassisRobotDrive->SetMaxOutput(1.0);
-	shifterShifter = new DoubleSolenoid(1, 7, 5);      
+	shifterShifter = new DoubleSolenoid(1, 7, 2);      
 	
 	
 	sensorslightSensor = new DigitalInput(1, 8);
