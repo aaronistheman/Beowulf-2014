@@ -21,8 +21,8 @@ void ArmOn::Initialize() {
 }
 // Called repeatedly when this Command is scheduled to run
 void ArmOn::Execute() {
-	Robot::arm->armA->Set(-0.6);
-	Robot::arm->armB->Set(-0.6);
+	Robot::arm->armA->Set(0.6);
+	Robot::arm->armB->Set(0.6);
 }
 // Make this return true when this Command no longer needs to run execute()
 bool ArmOn::IsFinished() {

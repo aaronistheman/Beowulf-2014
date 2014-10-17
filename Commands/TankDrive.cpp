@@ -22,15 +22,15 @@ void TankDrive::Initialize() {
 }
 // Called repeatedly when this Command is scheduled to run
 void TankDrive::Execute() {
-	Robot::chassis->robotDrive->Drive(0.0, 0.0);
-	/*
+	// Robot::chassis->robotDrive->Drive(0.0, 0.0);
+	
 	 const int leftY = 2;
 		const int rightY = 5;;
 		Robot::chassis->robotDrive->TankDrive(Robot::oi->getDriver(),
 				                      leftY,
 				                      Robot::oi->getDriver(),
 				                      rightY);
-				                      */
+				                      
 }
 // Make this return true when this Command no longer needs to run execute()
 bool TankDrive::IsFinished() {
