@@ -26,9 +26,9 @@ void TankDrive::Execute() {
 	
 	 const int leftY = 2;
 		const int rightY = 5;;
-		Robot::chassis->robotDrive->TankDrive(Robot::oi->getDriver(),
+		Robot::chassis->robotDrive->TankDrive(Robot::oi->getCoDriver(),
 				                      leftY,
-				                      Robot::oi->getDriver(),
+				                      Robot::oi->getCoDriver(),
 				                      rightY);
 				                      
 }
