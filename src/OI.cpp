@@ -14,7 +14,6 @@
 #include "Commands/ArmOn.h"
 #include "Commands/ArmReverse.h"
 #include "Commands/AutonomousCommands.h"
-#include "Commands/CompressorOn.h"
 #include "Commands/ConveyorOff.h"
 #include "Commands/ConveyorOn.h"
 #include "Commands/ConveyorReverse.h"
@@ -76,7 +75,6 @@ OI::OI() {
 	SmartDashboard::PutData("ConveyorOff", new ConveyorOff());
 	SmartDashboard::PutData("ShooterOn", new ShooterOn());
 	SmartDashboard::PutData("ShooterOff", new ShooterOff());
-	SmartDashboard::PutData("CompressorOn", new CompressorOn());
 	SmartDashboard::PutData("TankDrive", new TankDrive());
 	SmartDashboard::PutData("AutonomousCommands", new AutonomousCommands());
 	SmartDashboard::PutData("Shift", new Shift());
