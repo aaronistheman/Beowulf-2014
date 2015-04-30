@@ -2,7 +2,13 @@ Version 1.5
 
 ---
 Children:
-- Children: []
+- Children:
+  - Children: []
+    Properties:
+      Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Default Command, type: Command, validators: null, value: ConveyorOff}
+    Base: Subsystem
+    Name: Conveyor
   Properties: {}
   Base: Subsystems
   Name: Subsystems
@@ -10,7 +16,23 @@ Children:
   Properties: {}
   Base: OI
   Name: Operator Interface
-- Children: []
+- Children:
+  - Children: []
+    Properties:
+      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Requires, type: Subsystem, validators: null, value: Conveyor}
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command
+    Name: ConveyorReverse
+  - Children: []
+    Properties:
+      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Requires, type: Subsystem, validators: null, value: Conveyor}
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command
+    Name: ConveyorOff
   Properties: {}
   Base: Commands
   Name: Commands
