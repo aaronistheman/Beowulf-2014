@@ -19,7 +19,6 @@
 #include "Subsystems/Chassis.h"
 #include "Subsystems/Conveyor.h"
 #include "Subsystems/Intake.h"
-#include "Subsystems/Pressurizer.h"
 #include "Subsystems/Sensors.h"
 #include "Subsystems/Shifter.h"
 #include "Subsystems/Shooter.h"
@@ -34,7 +33,6 @@ public:
 	static Intake* intake;
 	static Conveyor* conveyor;
 	static Shooter* shooter;
-	static Pressurizer* pressurizer;
 	static Chassis* chassis;
 	static Shifter* shifter;
 	static Sensors* sensors;

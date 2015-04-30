@@ -12,7 +12,6 @@
 Intake* Robot::intake = 0;
 Conveyor* Robot::conveyor = 0;
 Shooter* Robot::shooter = 0;
-Pressurizer* Robot::pressurizer = 0;
 Chassis* Robot::chassis = 0;
 Shifter* Robot::shifter = 0;
 Sensors* Robot::sensors = 0;
@@ -25,7 +24,6 @@ void Robot::RobotInit() {
 	intake = new Intake();
 	conveyor = new Conveyor();
 	shooter = new Shooter();
-	pressurizer = new Pressurizer();
 	chassis = new Chassis();
 	shifter = new Shifter();
 	sensors = new Sensors();

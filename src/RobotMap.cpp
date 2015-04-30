@@ -16,7 +16,6 @@ CANJaguar* RobotMap::conveyorConveyor = NULL;
 DoubleSolenoid* RobotMap::conveyorStopper = NULL;
 CANJaguar* RobotMap::shooterShooterA = NULL;
 CANJaguar* RobotMap::shooterShooterB = NULL;
-Compressor* RobotMap::pressurizerCompressor = NULL;
 CANJaguar* RobotMap::chassisFrontLeft = NULL;
 CANJaguar* RobotMap::chassisFrontRight = NULL;
 CANJaguar* RobotMap::chassisBackLeft = NULL;
@@ -33,22 +32,19 @@ void RobotMap::init() {
 	intakeIntake = new CANJaguar(11);
 	
 	
-	intakeSpoiler = new DoubleSolenoid(1, 4, 6);      
+	intakeSpoiler = new DoubleSolenoid(0, 4, 6);
 	
 	
 	conveyorConveyor = new CANJaguar(12);
 	
 	
-	conveyorStopper = new DoubleSolenoid(1, 8, 3);      
+	conveyorStopper = new DoubleSolenoid(0, 8, 3);
 	
 	
 	shooterShooterA = new CANJaguar(7);
 	
 	
 	shooterShooterB = new CANJaguar(8);
-	
-	
-	pressurizerCompressor = new Compressor(1, 1, 1, 3);
 	
 	
 	chassisFrontLeft = new CANJaguar(2);
@@ -73,7 +69,7 @@ void RobotMap::init() {
 	shifterShifter = new DoubleSolenoid(1, 7, 2);      
 	
 	
-	sensorslightSensor = new DigitalInput(1, 8);
+	sensorslightSensor = new DigitalInput(8);
 	lw->AddSensor("Sensors", "lightSensor", sensorslightSensor);
 	
 	armArmA = new CANJaguar(9);
