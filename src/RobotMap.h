@@ -25,7 +25,6 @@ public:
 	static DoubleSolenoid* conveyorStopper;
 	static CANJaguar* shooterShooterA;
 	static CANJaguar* shooterShooterB;
-	static Compressor* pressurizerCompressor;
 	static CANJaguar* chassisFrontLeft;
 	static CANJaguar* chassisFrontRight;
 	static CANJaguar* chassisBackLeft;

@@ -16,7 +16,6 @@ CANJaguar* RobotMap::conveyorConveyor = NULL;
 DoubleSolenoid* RobotMap::conveyorStopper = NULL;
 CANJaguar* RobotMap::shooterShooterA = NULL;
 CANJaguar* RobotMap::shooterShooterB = NULL;
-Compressor* RobotMap::pressurizerCompressor = NULL;
 CANJaguar* RobotMap::chassisFrontLeft = NULL;
 CANJaguar* RobotMap::chassisFrontRight = NULL;
 CANJaguar* RobotMap::chassisBackLeft = NULL;
@@ -46,9 +45,6 @@ void RobotMap::init() {
 	
 	
 	shooterShooterB = new CANJaguar(8);
-	
-	
-	pressurizerCompressor = new Compressor(0, 1, 1, 3);
 	
 	
 	chassisFrontLeft = new CANJaguar(2);
