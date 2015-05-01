@@ -38,7 +38,7 @@ void RobotMap::init() {
 	conveyorConveyor = new CANJaguar(12);
 	
 	
-	conveyorStopper = new DoubleSolenoid(0, 8, 3);
+	conveyorStopper = new DoubleSolenoid(0, 1, 3);
 	
 	
 	shooterShooterA = new CANJaguar(7);
@@ -66,7 +66,7 @@ void RobotMap::init() {
         chassisRobotDrive->SetExpiration(0.1);
         chassisRobotDrive->SetSensitivity(0.5);
         chassisRobotDrive->SetMaxOutput(1.0);
-	shifterShifter = new DoubleSolenoid(1, 7, 2);      
+	shifterShifter = new DoubleSolenoid(1, 7, 5);
 	
 	
 	sensorslightSensor = new DigitalInput(8);
