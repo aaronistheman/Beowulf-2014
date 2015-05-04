@@ -32,13 +32,13 @@ void RobotMap::init() {
 	intakeIntake = new CANJaguar(11);
 	
 	
-	intakeSpoiler = new DoubleSolenoid(0, 4, 6);
+	intakeSpoiler = new DoubleSolenoid(0, 5, 2);
 	
 	
 	conveyorConveyor = new CANJaguar(12);
 	
 	
-	conveyorStopper = new DoubleSolenoid(0, 1, 3);
+	conveyorStopper = new DoubleSolenoid(0, 6, 1);
 	
 	
 	shooterShooterA = new CANJaguar(7);
@@ -59,14 +59,15 @@ void RobotMap::init() {
 	chassisBackRight = new CANJaguar(5);
 	
 	
-	chassisRobotDrive = new RobotDrive(chassisFrontLeft, chassisBackLeft,
-              chassisFrontRight, chassisBackRight);
+	//chassisRobotDrive = new RobotDrive(chassisFrontLeft, chassisBackLeft,
+              //chassisFrontRight, chassisBackRight);
 	
-	chassisRobotDrive->SetSafetyEnabled(true);
-        chassisRobotDrive->SetExpiration(0.1);
-        chassisRobotDrive->SetSensitivity(0.5);
-        chassisRobotDrive->SetMaxOutput(1.0);
-	shifterShifter = new DoubleSolenoid(0, 7, 5);
+	//chassisRobotDrive->SetSafetyEnabled(true);
+      //  chassisRobotDrive->SetExpiration(0.1);
+        //chassisRobotDrive->SetSensitivity(0.5);
+        //chassisRobotDrive->SetMaxOutput(1.0);
+
+	shifterShifter = new DoubleSolenoid(0, 3, 4);
 	
 	
 	sensorslightSensor = new DigitalInput(8);

@@ -23,14 +23,19 @@ void TankDrive::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void TankDrive::Execute() {
 	// Robot::chassis->robotDrive->Drive(0.0, 0.0);
-	
-	 const int leftY = 2;
+/*
+	 const int leftY = 1;
 		const int rightY = 5;;
 		Robot::chassis->robotDrive->TankDrive(Robot::oi->getDriver(),
 				                      leftY,
 				                      Robot::oi->getDriver(),
 				                      rightY);
-				                      
+	*/
+	Robot::chassis->frontLeft->Set(Robot::oi->getDriver()->GetRawAxis(1));
+	Robot::chassis->backLeft->Set(Robot::oi->getDriver()->GetRawAxis(1));
+
+	Robot::chassis->frontRight->Set(Robot::oi->getDriver()->GetRawAxis(5) * -1);
+	Robot::chassis->backRight->Set(Robot::oi->getDriver()->GetRawAxis(5) * -1);
 }
 // Make this return true when this Command no longer needs to run execute()
 bool TankDrive::IsFinished() {
