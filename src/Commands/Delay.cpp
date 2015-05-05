@@ -8,14 +8,13 @@
 #include "Delay.h"
 
 Delay::Delay()
-: timer()
 {
-
+	shootTimer = new Timer;
 }
 
 void Delay::Initialize()
 {
-	timer->Start();
+	shootTimer->Start();
 }
 
 void Delay::Execute()
@@ -25,18 +24,18 @@ void Delay::Execute()
 
 bool Delay::IsFinished()
 {
-	return timer->HasPeriodPassed(2.0);
+	return shootTimer->HasPeriodPassed(2.0);
 }
 
 void Delay::End()
 {
-	timer->Stop();
-	timer->Reset();
+	shootTimer->Stop();
+	shootTimer->Reset();
 }
 
 void Delay::Interrupted()
 {
-	timer->Stop();
-	timer->Reset();
+	shootTimer->Stop();
+	shootTimer->Reset();
 }
 

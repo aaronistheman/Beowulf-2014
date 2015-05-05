@@ -9,6 +9,7 @@
 #define SRC_COMMANDS_AUTOSHOOT_H_
 
 #include "Commands/CommandGroup.h"
+#include "../Robot.h"
 
 class AutoShoot : public CommandGroup
 {
