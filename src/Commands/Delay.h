@@ -8,7 +8,8 @@
 #ifndef SRC_COMMANDS_DELAY_H_
 #define SRC_COMMANDS_DELAY_H_
 
-#include "Commands/Command.h"
+#include "Commands/Subsystem.h"
+#include "../Robot.h"
 
 class Delay : public Command
 {
