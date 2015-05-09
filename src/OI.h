@@ -17,12 +17,12 @@ private:
 	JoystickButton* cButtonB;
 	JoystickButton* cButtonY;
 	JoystickButton* cRightBumper;
-	JoystickButton* cButton8;
-	JoystickButton* cButton7;
+	JoystickButton* cButtonStart;
+	JoystickButton* cButtonBack;
 	JoystickButton* cLeftBumper;
 	Joystick* driver;
-	JoystickButton* dButton8;
-	JoystickButton* dButton7;
+	JoystickButton* dButtonStart;
+	JoystickButton* dButtonBack;
 	JoystickButton* dRightStick;
 	JoystickButton* dButtonB;
 	JoystickButton* dButtonY;

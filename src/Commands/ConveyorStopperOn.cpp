@@ -22,6 +22,11 @@ void ConveyorStopperOn::Execute() {
 		Robot::conveyor->conveyor->Set(-1.0);
 		Robot::intake->intake->Set(-1.0);
 	}
+	else
+	{
+		Robot::conveyor->conveyor->Set(0.0);
+		Robot::intake->intake->Set(0.0);
+	}
 }
 
 bool ConveyorStopperOn::IsFinished() {

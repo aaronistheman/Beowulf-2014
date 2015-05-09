@@ -41,21 +41,21 @@ OI::OI() {
 		cButtonY->WhileHeld(new ArmOn());
 	cRightBumper = new JoystickButton(coDriver, 6);
 		cRightBumper->WhileHeld(new ShooterOn());
-	cButton8 = new JoystickButton(coDriver, 8);
-		cButton8->WhileHeld(new ConveyorReverse());
-	cButton7 = new JoystickButton(coDriver, 7);
-		cButton7->WhileHeld(new IntakeReverse());
+	cButtonStart = new JoystickButton(coDriver, 8);
+		cButtonStart->WhileHeld(new ConveyorReverse());
+	cButtonBack = new JoystickButton(coDriver, 7);
+		cButtonBack->WhileHeld(new IntakeReverse());
 	cLeftBumper = new JoystickButton(coDriver, 5);
-		cLeftBumper->WhenReleased(new StopperSwitch());
+		cLeftBumper->WhenReleased(new IntakeSwitch());
 	
 	driver = new Joystick(0);
 
-	dButton8 = new JoystickButton(driver, 8);
-		dButton8->WhileHeld(new ConveyorReverse());
-	dButton7 = new JoystickButton(driver, 7);
-		dButton7->WhileHeld(new IntakeReverse());
+	dButtonStart = new JoystickButton(driver, 8);
+		dButtonStart->WhileHeld(new ConveyorReverse());
+	dButtonBack = new JoystickButton(driver, 7);
+		dButtonBack->WhileHeld(new IntakeReverse());
 	dRightStick = new JoystickButton(driver, 10);
-		dRightStick->WhenReleased(new IntakeSwitch());
+		dRightStick->WhenReleased(new StopperSwitch());
 	dButtonB = new JoystickButton(driver, 2);
 		dButtonB->WhileHeld(new ArmReverse());
 	dButtonY = new JoystickButton(driver, 4);
