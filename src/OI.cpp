@@ -68,8 +68,8 @@ OI::OI() {
 		dRightBumper->WhileHeld(new ShooterOn());
 	dLeftStick = new JoystickButton(driver, 9);
 		dLeftStick->WhenReleased(new Shift());
-	dLeftBumper = new JoystickButton(driver, 5);
-		dLeftBumper->WhileHeld(new ConveyorStopperOn());
+	//dLeftBumper = new JoystickButton(driver, 5);
+		//dLeftBumper->WhileHeld(new ConveyorStopperOn());
      
         // SmartDashboard Buttons
 	SmartDashboard::PutData("IntakeOn", new IntakeOn());
