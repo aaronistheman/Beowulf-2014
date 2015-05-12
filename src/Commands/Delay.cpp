@@ -15,7 +15,7 @@ Delay::Delay()
 
 void Delay::Initialize()
 {
-	timer->Start();
+	timer.Start();
 }
 
 void Delay::Execute()
@@ -25,18 +25,18 @@ void Delay::Execute()
 
 bool Delay::IsFinished()
 {
-	return timer->HasPeriodPassed(2.0);
+	return timer.HasPeriodPassed(2.0);
 }
 
 void Delay::End()
 {
-	timer->Stop();
-	timer->Reset();
+	timer.Stop();
+	timer.Reset();
 }
 
 void Delay::Interrupted()
 {
-	timer->Stop();
-	timer->Reset();
+	timer.Stop();
+	timer.Reset();
 }
 
