@@ -21,7 +21,7 @@ public:
 	virtual void End();
 	virtual void Interrupted();
 private:
-	Timer timer;
+	Timer* shootTimer;
 };
 
 #endif /* SRC_COMMANDS_DELAY_H_ */
