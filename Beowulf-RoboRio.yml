@@ -661,7 +661,7 @@ Children:
         name: Requires, type: Subsystem, validators: null, value: Arm}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
-  - Name: AutonomousCommand
+  - Name: AutonomousCommands
     Base: Command Group
     Children: []
     Properties:
@@ -796,7 +796,7 @@ Children:
   Properties: {}
 Properties:
   Eclipse Workspace: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Aaron\workspace',
-    extension: null, folder: true, name: Eclipse Workspace, validators: null, value: 'C:\Users\computer\workspace'}
+    extension: null, folder: true, name: Eclipse Workspace, validators: null, value: 'C:\Users\Aaron\workspace'}
   Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Commands, validators: null, value: true}
   Java Package: !!robotbuilder.data.properties.StringProperty {default: org.usfirst.frc0000,
@@ -812,4 +812,4 @@ Properties:
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-    name: Autonomous Command, type: Command, validators: null, value: AutonomousCommand}
+    name: Autonomous Command, type: Command, validators: null, value: AutonomousCommands}
